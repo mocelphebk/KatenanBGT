@@ -11,7 +11,6 @@ jobs:
     permissions:
         contents: "write"
         packages: "write"
-        pull-requests: "read"
     runs-on: windows-latest
     steps:
         - uses: actions/checkout@v3
@@ -34,7 +33,6 @@ jobs:
 
 
             mkdir ComfyUI_windows_portable
-            mv python_embeded ComfyUI_windows_portable
             mv ComfyUI_copy ComfyUI_windows_portable/ComfyUI
 
             cd ComfyUI_windows_portable
